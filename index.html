@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Kloni (Faqat HTML va CSS)</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ikonkalar uchun FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Yuqori panel (Header) -->
+    <header class="header">
+        <div class="logo">
+            <i class="fa-solid fa-bars menu-icon"></i>
+            <i class="fa-brands fa-youtube youtube-icon"></i>
+            <span>YouTube</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Qidiruv...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="user-menu">
+            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-bell"></i>
+            <div class="avatar">U</div>
+        </div>
+    </header>
+
+    <div class="main-container">
+
+        <!-- Yon menyu (Sidebar) -->
+        <aside class="sidebar">
+            <a href="#" class="active"><i class="fa-solid fa-house"></i> <span>Bosh sahifa</span></a>
+            <a href="#"><i class="fa-solid fa-bolt"></i> <span>Shorts</span></a>
+            <a href="#"><i class="fa-solid fa-folder"></i> <span>Obunalar</span></a>
+            <hr>
+            <a href="#"><i class="fa-solid fa-clock-rotate-left"></i> <span>Tarix</span></a>
+            <a href="#"><i class="fa-solid fa-thumbs-up"></i> <span>Yoqqanlar</span></a>
+        </aside>
+
+        <!-- Asosiy qism (Content) -->
+        <main class="content">
+
+            <!-- Kategoriyalar -->
+            <div class="categories">
+                <span class="chip active">Barchasi</span>
+                <span class="chip">Dasturlash</span>
+                <span class="chip">Musiqa</span>
+                <span class="chip">O'yinlar</span>
+                <span class="chip">Yangiliklar</span>
+            </div>
+
+            <!-- Videolar to'plami -->
+            <div class="video-grid">
+
+                <!-- Video 1 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-details">
+                        <div class="channel-avatar">M</div>
+                        <div class="video-text">
+                            <h3>Rick Astley - Never Gonna Give You Up</h3>
+                            <p class="channel-name">RickAstleyVEVO</p>
+                            <p class="views">1.4 mlrd ko'rishlar • 13 yil oldin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/L_LUpnjgPso" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-details">
+                        <div class="channel-avatar">C</div>
+                        <div class="video-text">
+                            <h3>Frontend Darslari - HTML va CSS noldan</h3>
+                            <p class="channel-name">Code Darslar</p>
+                            <p class="views">85 ming ko'rishlar • 2 oy oldin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-details">
+                        <div class="channel-avatar">N</div>
+                        <div class="video-text">
+                            <h3>Relaxing Nature 4K - Tabiat manzaralari</h3>
+                            <p class="channel-name">Nature World</p>
+                            <p class="views">500 ming ko'rishlar • 5 oy oldin</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
